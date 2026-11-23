@@ -4,32 +4,16 @@
 
 # Resymbian
 
-**Keeping Symbian usable today.** Clients, bridges and build tooling for the
-phones people still carry, written so that anyone can rebuild them and check
-what they run.
+**Keeping Symbian usable today.**  
+Modern systems keep getting more closed off. Most phones running them are made in China, and these devices are built to steal our data and feed screen addiction. That's why this project exists — part of my return to Symbian, the OS I grew up with and want to make my daily driver again. There's no better dumbphone than an original Nokia or other Symbian device. Today's dumbphones run an extremely basic RTOS with no support for installing apps, ever since KaiOS fell from grace. They're also usually made in China and often just rebranded Chinese devices sold at double the price.
 
-This is my personal work and, just as much, my learning process. Nobody pays for
-it; I write it because I want more people to be able to use Symbian today with
-the comfort and safety of a current device: a chat client that still works, a
-notification that actually arrives, a build you can reproduce instead of a
-binary someone uploaded once.
+With the Resymbian project, you can use your old Nokia/Ericsson/Panasonic/Samsung Symbian phone again.
 
-## What that means in practice
+## Project pillars
 
-- **Reproducible builds.** Every artefact comes from a workflow you can read and
-  rerun, with pinned toolchains and checksums, from source in the repository.
-  Where a proprietary SDK is unavoidable, the recipe is public and the download
-  is pinned by SHA-256.
-- **Comfort.** The clients are meant to be used daily on a keypad phone: small
-  memory footprint, background notifications, attachments, settings that
-  survive a reboot.
-- **Safety.** No proxies that see your session, no third-party servers in the
-  middle, no unverifiable binaries. TLS, signing and release provenance are
-  part of the work, not an afterthought.
-- **Clients for what is actually required today.** The services people use are
-  not going to make a J2ME build for them, so the clients exist here: Discord,
-  Telegram, and the native pieces those clients need to behave like modern apps
-  on a 2007 handset.
+- **Reproducible builds, on GitHub Actions, 100% auditable**
+- **Essential software for the 202X era, adapted for Symbian**
+- **Privacy and security: preferably no proxies**
 
 ## Projects
 
@@ -39,14 +23,5 @@ binary someone uploaded once.
 | [ResyGram](https://github.com/resymbian/ResyGram) | Telegram client for MIDP 2.0 / CLDC 1.1 phones, with attachments, file uploads and background notifications. |
 | [NotiHelper](https://github.com/resymbian/NotiHelper) | Native S60 3rd bridge: loopback socket in, system note and Messaging Inbox entry out. Built and signed in GitHub Actions. |
 | [for-devs](https://github.com/resymbian/for-devs) | Tooling and notes for developing for Symbian without a museum of old PCs. |
-| [Kutegram](https://github.com/resymbian/Kutegram) | sisGram, an unofficial Telegram client for Symbian^3 / Belle, forked from Kutegram. |
 
-## Status, honestly
-
-These are working projects, not polished products. Not everything has been
-tested on every handset, and the repositories say where that is the case:
-limitations are documented next to the feature, not hidden in a roadmap. If a
-platform makes something impossible, the README explains why instead of
-promising it.
-
-If you have an old phone in a drawer, that is the target audience.
+## Beta — I'm still learning. [Do you want to join?](https://link.inled.es/telegram)
