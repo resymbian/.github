@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://hosted.inled.es/cdn/resymbian-logo-symbian-horizontal.png" alt="Resymbian" width="420">
+  <img src="https://hosted.inled.es/img/resymbian-logo-symbian-horizontal.png" alt="Resymbian" width="420">
 </p>
 
 # Resymbian
